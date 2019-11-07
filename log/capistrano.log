@@ -1,0 +1,6 @@
+# Logfile created on 2019-11-07 16:22:01 +0900 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-07 16:22:01 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [05d2cfa3] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as ec2-user@52.198.123.190
+ DEBUG [05d2cfa3] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
