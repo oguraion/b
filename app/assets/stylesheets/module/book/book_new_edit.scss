@@ -45,7 +45,7 @@
           background-color: $red;
         }
         .label-any::after {
-          content: '任意';
+        
           @include require;
           background-color: $gray;
         }
