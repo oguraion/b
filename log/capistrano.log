@@ -37,3 +37,21 @@
  DEBUG [da1ef176] Running [ ! -d /var/www/b/shared/config ] as ec2-user@52.198.123.190
  DEBUG [da1ef176] Command: [ ! -d /var/www/b/shared/config ]
  DEBUG [da1ef176] Finished in 0.088 seconds with exit status 1 (failed).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-07 17:11:50 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [12a66c3e] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as ec2-user@52.198.123.190
+ DEBUG [12a66c3e] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [12a66c3e] Finished in 0.234 seconds with exit status 0 (successful).
+ DEBUG [b4e339b0] Running [ ! -d /var/www/b/shared/config ] as ec2-user@52.198.123.190
+ DEBUG [b4e339b0] Command: [ ! -d /var/www/b/shared/config ]
+ DEBUG [b4e339b0] Finished in 0.089 seconds with exit status 1 (failed).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-07 17:16:14 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [33e32b58] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as ec2-user@52.198.123.190
+ DEBUG [33e32b58] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [33e32b58] Finished in 0.420 seconds with exit status 0 (successful).
+ DEBUG [ca97e67e] Running [ ! -d /var/www/b/shared/config ] as ec2-user@52.198.123.190
+ DEBUG [ca97e67e] Command: [ ! -d /var/www/b/shared/config ]
+ DEBUG [ca97e67e] Finished in 0.084 seconds with exit status 1 (failed).
