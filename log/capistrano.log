@@ -1809,3 +1809,185 @@
 /home/ec2-user/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
  DEBUG [b62a68af] 	Tasks: TOP => environment
  DEBUG [b62a68af] 	(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-07 18:36:39 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [4b0efba1] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as ec2-user@52.198.123.190
+ DEBUG [4b0efba1] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [4b0efba1] Finished in 0.520 seconds with exit status 0 (successful).
+ DEBUG [7491778f] Running [ ! -d /var/www/b/shared/config ] as ec2-user@52.198.123.190
+ DEBUG [7491778f] Command: [ ! -d /var/www/b/shared/config ]
+ DEBUG [7491778f] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG Uploading config/secrets.yml 0.0%
+  INFO Uploading config/secrets.yml 100.0%
+  INFO [2e1c66fd] Running /usr/bin/env mkdir -p /tmp as ec2-user@52.198.123.190
+ DEBUG [2e1c66fd] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /tmp )
+  INFO [2e1c66fd] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-b-production-user.sh 0.0%
+  INFO Uploading /tmp/git-ssh-b-production-user.sh 100.0%
+  INFO [fa17c29c] Running /usr/bin/env chmod 700 /tmp/git-ssh-b-production-user.sh as ec2-user@52.198.123.190
+ DEBUG [fa17c29c] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env chmod 700 /tmp/git-ssh-b-production-user.sh )
+  INFO [fa17c29c] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [f3d09369] Running /usr/bin/env git ls-remote git@github.com:oguraion/b.git HEAD as ec2-user@52.198.123.190
+ DEBUG [f3d09369] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b-production-user.sh" ; /usr/bin/env git ls-remote git@github.com:oguraion/b.git HEAD )
+ DEBUG [f3d09369] 	9789a3427c7936a1c6a8d75da968e3d7ae2d16ba	HEAD
+  INFO [f3d09369] Finished in 2.013 seconds with exit status 0 (successful).
+  INFO [33aace60] Running /usr/bin/env mkdir -p /var/www/b/shared /var/www/b/releases as ec2-user@52.198.123.190
+ DEBUG [33aace60] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /var/www/b/shared /var/www/b/releases )
+  INFO [33aace60] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [995aec21] Running /usr/bin/env mkdir -p /var/www/b/shared/log /var/www/b/shared/tmp/pids /var/www/b/shared/tmp/cache /var/www/b/shared/tmp/sockets /var/www/b/shared/vendor/bundle /var/www/b/shared/public/system /var/www/b/shared/public/uploads /var/www/b/shared/public/assets as ec2-user@52.198.123.190
+ DEBUG [995aec21] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /var/www/b/shared/log /var/www/b/shared/tmp/pids /var/www/b/shared/tmp/cache /var/www/b/shared/tmp/sockets /var/www/b/shared/vendor/bundle /var/www/b/shared/public/system /var/www/b/shared/public/uploads /var/www/b/shared/public/assets )
+  INFO [995aec21] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [38c8bb8c] Running /usr/bin/env mkdir -p /var/www/b/shared/config as ec2-user@52.198.123.190
+ DEBUG [38c8bb8c] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /var/www/b/shared/config )
+  INFO [38c8bb8c] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [41a82e55] Running [ -f /var/www/b/shared/config/secrets.yml ] as ec2-user@52.198.123.190
+ DEBUG [41a82e55] Command: [ -f /var/www/b/shared/config/secrets.yml ]
+ DEBUG [41a82e55] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [3af4c032] Running [ -f /var/www/b/current/REVISION ] as ec2-user@52.198.123.190
+ DEBUG [3af4c032] Command: [ -f /var/www/b/current/REVISION ]
+ DEBUG [3af4c032] Finished in 0.086 seconds with exit status 1 (failed).
+ DEBUG [7e3575d4] Running [ -f /var/www/b/repo/HEAD ] as ec2-user@52.198.123.190
+ DEBUG [7e3575d4] Command: [ -f /var/www/b/repo/HEAD ]
+ DEBUG [7e3575d4] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/b/repo
+ DEBUG [4a95da49] Running if test ! -d /var/www/b/repo; then echo "Directory does not exist '/var/www/b/repo'" 1>&2; false; fi as ec2-user@52.198.123.190
+ DEBUG [4a95da49] Command: if test ! -d /var/www/b/repo; then echo "Directory does not exist '/var/www/b/repo'" 1>&2; false; fi
+ DEBUG [4a95da49] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [499733b8] Running /usr/bin/env git remote set-url origin git@github.com:oguraion/b.git as ec2-user@52.198.123.190
+ DEBUG [499733b8] Command: cd /var/www/b/repo && ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b-production-user.sh" ; /usr/bin/env git remote set-url origin git@github.com:oguraion/b.git )
+  INFO [499733b8] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [621e1f18] Running /usr/bin/env git remote update --prune as ec2-user@52.198.123.190
+ DEBUG [621e1f18] Command: cd /var/www/b/repo && ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b-production-user.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [621e1f18] 	Fetching origin
+ DEBUG [621e1f18] 	From github.com:oguraion/b
+   4c8da48..9789a34  master     -> master
+  INFO [621e1f18] Finished in 2.160 seconds with exit status 0 (successful).
+ DEBUG [173cf55b] Running if test ! -d /var/www/b/repo; then echo "Directory does not exist '/var/www/b/repo'" 1>&2; false; fi as ec2-user@52.198.123.190
+ DEBUG [173cf55b] Command: if test ! -d /var/www/b/repo; then echo "Directory does not exist '/var/www/b/repo'" 1>&2; false; fi
+ DEBUG [173cf55b] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [0b06880c] Running /usr/bin/env mkdir -p /var/www/b/releases/20191107093643 as ec2-user@52.198.123.190
+ DEBUG [0b06880c] Command: cd /var/www/b/repo && ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b-production-user.sh" ; /usr/bin/env mkdir -p /var/www/b/releases/20191107093643 )
+  INFO [0b06880c] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [388fc04d] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/b/releases/20191107093643 as ec2-user@52.198.123.190
+ DEBUG [388fc04d] Command: cd /var/www/b/repo && ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b-production-user.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/b/releases/20191107093643 )
+  INFO [388fc04d] Finished in 0.507 seconds with exit status 0 (successful).
+ DEBUG [5c921bf4] Running if test ! -d /var/www/b/repo; then echo "Directory does not exist '/var/www/b/repo'" 1>&2; false; fi as ec2-user@52.198.123.190
+ DEBUG [5c921bf4] Command: if test ! -d /var/www/b/repo; then echo "Directory does not exist '/var/www/b/repo'" 1>&2; false; fi
+ DEBUG [5c921bf4] Finished in 0.082 seconds with exit status 0 (successful).
+ DEBUG [1c2672f9] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@52.198.123.190
+ DEBUG [1c2672f9] Command: cd /var/www/b/repo && ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b-production-user.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [1c2672f9] 	9789a3427c7936a1c6a8d75da968e3d7ae2d16ba
+ DEBUG [1c2672f9] Finished in 0.086 seconds with exit status 0 (successful).
+ DEBUG [abe0e082] Running if test ! -d /var/www/b/releases/20191107093643; then echo "Directory does not exist '/var/www/b/releases/20191107093643'" 1>&2; false; fi as ec2-user@52.198.123.190
+ DEBUG [abe0e082] Command: if test ! -d /var/www/b/releases/20191107093643; then echo "Directory does not exist '/var/www/b/releases/20191107093643'" 1>&2; false; fi
+ DEBUG [abe0e082] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [daa40216] Running /usr/bin/env echo "9789a3427c7936a1c6a8d75da968e3d7ae2d16ba" > REVISION as ec2-user@52.198.123.190
+ DEBUG [daa40216] Command: cd /var/www/b/releases/20191107093643 && ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env echo "9789a3427c7936a1c6a8d75da968e3d7ae2d16ba" > REVISION )
+  INFO [daa40216] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [e404a107] Running /usr/bin/env mkdir -p /var/www/b/releases/20191107093643/config as ec2-user@52.198.123.190
+ DEBUG [e404a107] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /var/www/b/releases/20191107093643/config )
+  INFO [e404a107] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG [1706eb94] Running [ -L /var/www/b/releases/20191107093643/config/secrets.yml ] as ec2-user@52.198.123.190
+ DEBUG [1706eb94] Command: [ -L /var/www/b/releases/20191107093643/config/secrets.yml ]
+ DEBUG [1706eb94] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [a8dacbdb] Running [ -f /var/www/b/releases/20191107093643/config/secrets.yml ] as ec2-user@52.198.123.190
+ DEBUG [a8dacbdb] Command: [ -f /var/www/b/releases/20191107093643/config/secrets.yml ]
+ DEBUG [a8dacbdb] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [f107b268] Running /usr/bin/env rm /var/www/b/releases/20191107093643/config/secrets.yml as ec2-user@52.198.123.190
+ DEBUG [f107b268] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env rm /var/www/b/releases/20191107093643/config/secrets.yml )
+  INFO [f107b268] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [8f104774] Running /usr/bin/env ln -s /var/www/b/shared/config/secrets.yml /var/www/b/releases/20191107093643/config/secrets.yml as ec2-user@52.198.123.190
+ DEBUG [8f104774] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/b/shared/config/secrets.yml /var/www/b/releases/20191107093643/config/secrets.yml )
+  INFO [8f104774] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [399f7cd5] Running /usr/bin/env mkdir -p /var/www/b/releases/20191107093643 /var/www/b/releases/20191107093643/tmp /var/www/b/releases/20191107093643/vendor /var/www/b/releases/20191107093643/public as ec2-user@52.198.123.190
+ DEBUG [399f7cd5] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /var/www/b/releases/20191107093643 /var/www/b/releases/20191107093643/tmp /var/www/b/releases/20191107093643/vendor /var/www/b/releases/20191107093643/public )
+  INFO [399f7cd5] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [28c79849] Running [ -L /var/www/b/releases/20191107093643/log ] as ec2-user@52.198.123.190
+ DEBUG [28c79849] Command: [ -L /var/www/b/releases/20191107093643/log ]
+ DEBUG [28c79849] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [a90589ce] Running [ -d /var/www/b/releases/20191107093643/log ] as ec2-user@52.198.123.190
+ DEBUG [a90589ce] Command: [ -d /var/www/b/releases/20191107093643/log ]
+ DEBUG [a90589ce] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [db5b1d98] Running /usr/bin/env rm -rf /var/www/b/releases/20191107093643/log as ec2-user@52.198.123.190
+ DEBUG [db5b1d98] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env rm -rf /var/www/b/releases/20191107093643/log )
+  INFO [db5b1d98] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [c5df25ce] Running /usr/bin/env ln -s /var/www/b/shared/log /var/www/b/releases/20191107093643/log as ec2-user@52.198.123.190
+ DEBUG [c5df25ce] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/b/shared/log /var/www/b/releases/20191107093643/log )
+  INFO [c5df25ce] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [aef6f343] Running [ -L /var/www/b/releases/20191107093643/tmp/pids ] as ec2-user@52.198.123.190
+ DEBUG [aef6f343] Command: [ -L /var/www/b/releases/20191107093643/tmp/pids ]
+ DEBUG [aef6f343] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [30249c1e] Running [ -d /var/www/b/releases/20191107093643/tmp/pids ] as ec2-user@52.198.123.190
+ DEBUG [30249c1e] Command: [ -d /var/www/b/releases/20191107093643/tmp/pids ]
+ DEBUG [30249c1e] Finished in 0.088 seconds with exit status 1 (failed).
+  INFO [a87e943d] Running /usr/bin/env ln -s /var/www/b/shared/tmp/pids /var/www/b/releases/20191107093643/tmp/pids as ec2-user@52.198.123.190
+ DEBUG [a87e943d] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/b/shared/tmp/pids /var/www/b/releases/20191107093643/tmp/pids )
+  INFO [a87e943d] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [706f41fb] Running [ -L /var/www/b/releases/20191107093643/tmp/cache ] as ec2-user@52.198.123.190
+ DEBUG [706f41fb] Command: [ -L /var/www/b/releases/20191107093643/tmp/cache ]
+ DEBUG [706f41fb] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [7ea278d2] Running [ -d /var/www/b/releases/20191107093643/tmp/cache ] as ec2-user@52.198.123.190
+ DEBUG [7ea278d2] Command: [ -d /var/www/b/releases/20191107093643/tmp/cache ]
+ DEBUG [7ea278d2] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [e9f793c1] Running /usr/bin/env rm -rf /var/www/b/releases/20191107093643/tmp/cache as ec2-user@52.198.123.190
+ DEBUG [e9f793c1] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env rm -rf /var/www/b/releases/20191107093643/tmp/cache )
+  INFO [e9f793c1] Finished in 0.116 seconds with exit status 0 (successful).
+  INFO [99a31d27] Running /usr/bin/env ln -s /var/www/b/shared/tmp/cache /var/www/b/releases/20191107093643/tmp/cache as ec2-user@52.198.123.190
+ DEBUG [99a31d27] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/b/shared/tmp/cache /var/www/b/releases/20191107093643/tmp/cache )
+  INFO [99a31d27] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [01aa2d9f] Running [ -L /var/www/b/releases/20191107093643/tmp/sockets ] as ec2-user@52.198.123.190
+ DEBUG [01aa2d9f] Command: [ -L /var/www/b/releases/20191107093643/tmp/sockets ]
+ DEBUG [01aa2d9f] Finished in 0.086 seconds with exit status 1 (failed).
+ DEBUG [2f0fcf5d] Running [ -d /var/www/b/releases/20191107093643/tmp/sockets ] as ec2-user@52.198.123.190
+ DEBUG [2f0fcf5d] Command: [ -d /var/www/b/releases/20191107093643/tmp/sockets ]
+ DEBUG [2f0fcf5d] Finished in 0.083 seconds with exit status 1 (failed).
+  INFO [01630b6e] Running /usr/bin/env ln -s /var/www/b/shared/tmp/sockets /var/www/b/releases/20191107093643/tmp/sockets as ec2-user@52.198.123.190
+ DEBUG [01630b6e] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/b/shared/tmp/sockets /var/www/b/releases/20191107093643/tmp/sockets )
+  INFO [01630b6e] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG [98f8a901] Running [ -L /var/www/b/releases/20191107093643/vendor/bundle ] as ec2-user@52.198.123.190
+ DEBUG [98f8a901] Command: [ -L /var/www/b/releases/20191107093643/vendor/bundle ]
+ DEBUG [98f8a901] Finished in 0.088 seconds with exit status 1 (failed).
+ DEBUG [9838b2d5] Running [ -d /var/www/b/releases/20191107093643/vendor/bundle ] as ec2-user@52.198.123.190
+ DEBUG [9838b2d5] Command: [ -d /var/www/b/releases/20191107093643/vendor/bundle ]
+ DEBUG [9838b2d5] Finished in 0.088 seconds with exit status 1 (failed).
+  INFO [50281c68] Running /usr/bin/env ln -s /var/www/b/shared/vendor/bundle /var/www/b/releases/20191107093643/vendor/bundle as ec2-user@52.198.123.190
+ DEBUG [50281c68] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/b/shared/vendor/bundle /var/www/b/releases/20191107093643/vendor/bundle )
+  INFO [50281c68] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [37d6aec0] Running [ -L /var/www/b/releases/20191107093643/public/system ] as ec2-user@52.198.123.190
+ DEBUG [37d6aec0] Command: [ -L /var/www/b/releases/20191107093643/public/system ]
+ DEBUG [37d6aec0] Finished in 0.083 seconds with exit status 1 (failed).
+ DEBUG [715f66c4] Running [ -d /var/www/b/releases/20191107093643/public/system ] as ec2-user@52.198.123.190
+ DEBUG [715f66c4] Command: [ -d /var/www/b/releases/20191107093643/public/system ]
+ DEBUG [715f66c4] Finished in 0.086 seconds with exit status 1 (failed).
+  INFO [13391c4f] Running /usr/bin/env ln -s /var/www/b/shared/public/system /var/www/b/releases/20191107093643/public/system as ec2-user@52.198.123.190
+ DEBUG [13391c4f] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/b/shared/public/system /var/www/b/releases/20191107093643/public/system )
+  INFO [13391c4f] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG [cd08cc00] Running [ -L /var/www/b/releases/20191107093643/public/uploads ] as ec2-user@52.198.123.190
+ DEBUG [cd08cc00] Command: [ -L /var/www/b/releases/20191107093643/public/uploads ]
+ DEBUG [cd08cc00] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [a534c0e5] Running [ -d /var/www/b/releases/20191107093643/public/uploads ] as ec2-user@52.198.123.190
+ DEBUG [a534c0e5] Command: [ -d /var/www/b/releases/20191107093643/public/uploads ]
+ DEBUG [a534c0e5] Finished in 0.085 seconds with exit status 1 (failed).
+  INFO [af5049a1] Running /usr/bin/env ln -s /var/www/b/shared/public/uploads /var/www/b/releases/20191107093643/public/uploads as ec2-user@52.198.123.190
+ DEBUG [af5049a1] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/b/shared/public/uploads /var/www/b/releases/20191107093643/public/uploads )
+  INFO [af5049a1] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [258e2e2c] Running [ -L /var/www/b/releases/20191107093643/public/assets ] as ec2-user@52.198.123.190
+ DEBUG [258e2e2c] Command: [ -L /var/www/b/releases/20191107093643/public/assets ]
+ DEBUG [258e2e2c] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [26b2cd5e] Running [ -d /var/www/b/releases/20191107093643/public/assets ] as ec2-user@52.198.123.190
+ DEBUG [26b2cd5e] Command: [ -d /var/www/b/releases/20191107093643/public/assets ]
+ DEBUG [26b2cd5e] Finished in 0.090 seconds with exit status 1 (failed).
+  INFO [7ba1bd24] Running /usr/bin/env ln -s /var/www/b/shared/public/assets /var/www/b/releases/20191107093643/public/assets as ec2-user@52.198.123.190
+ DEBUG [7ba1bd24] Command: ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/b/shared/public/assets /var/www/b/releases/20191107093643/public/assets )
+  INFO [7ba1bd24] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG [0c3e76e9] Running if test ! -d /var/www/b/releases/20191107093643; then echo "Directory does not exist '/var/www/b/releases/20191107093643'" 1>&2; false; fi as ec2-user@52.198.123.190
+ DEBUG [0c3e76e9] Command: if test ! -d /var/www/b/releases/20191107093643; then echo "Directory does not exist '/var/www/b/releases/20191107093643'" 1>&2; false; fi
+ DEBUG [0c3e76e9] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG [d44fa500] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/b/shared/bundle as ec2-user@52.198.123.190
+ DEBUG [d44fa500] Command: cd /var/www/b/releases/20191107093643 && ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="+0deKsWHBpm9Iwd979wOIfjepu28a60CELIjG38T" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/b/shared/bundle )
+ DEBUG [d44fa500] 	Your Ruby version is 2.6.5, but your Gemfile specified 2.4.1
+ DEBUG [d44fa500] Finished in 0.588 seconds with exit status 18 (failed).
+  INFO [5c9879dd] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/b/shared/bundle --jobs 4 --without development test --deployment --quiet as ec2-user@52.198.123.190
+ DEBUG [5c9879dd] Command: cd /var/www/b/releases/20191107093643 && ( export RBENV_ROOT="$HOME/.rbenv" PATH="/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" AWS_ACCESS_KEY_ID="AKIARZ7JJBXQ34COTE4H" AWS_SECRET_ACCESS_KEY="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" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/b/shared/bundle --jobs 4 --without development test --deployment --quiet )
+ DEBUG [5c9879dd] 	Your Ruby version is 2.6.5, but your Gemfile specified 2.4.1
