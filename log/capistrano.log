@@ -4,3 +4,36 @@
   INFO ---------------------------------------------------------------------------
  DEBUG [05d2cfa3] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as ec2-user@52.198.123.190
  DEBUG [05d2cfa3] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-07 16:29:39 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [4cd6071e] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as ec2-user@52.198.123.190
+ DEBUG [4cd6071e] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [4cd6071e] Finished in 0.309 seconds with exit status 0 (successful).
+ DEBUG [a7b68c2f] Running [ ! -d /var/www/chat-space2/shared/config ] as ec2-user@52.198.123.190
+ DEBUG [a7b68c2f] Command: [ ! -d /var/www/chat-space2/shared/config ]
+ DEBUG [a7b68c2f] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [12f14ebd] Running mkdir -p /var/www/chat-space2/shared/config as ec2-user@52.198.123.190
+ DEBUG [12f14ebd] Command: mkdir -p /var/www/chat-space2/shared/config
+  INFO [12f14ebd] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-07 16:33:06 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0c3fbe58] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as ec2-user@52.198.123.190
+ DEBUG [0c3fbe58] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [0c3fbe58] Finished in 0.219 seconds with exit status 0 (successful).
+ DEBUG [f4724c2a] Running [ ! -d /var/www/b/shared/config ] as ec2-user@52.198.123.190
+ DEBUG [f4724c2a] Command: [ ! -d /var/www/b/shared/config ]
+ DEBUG [f4724c2a] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [5416afa4] Running mkdir -p /var/www/b/shared/config as ec2-user@52.198.123.190
+ DEBUG [5416afa4] Command: mkdir -p /var/www/b/shared/config
+  INFO [5416afa4] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-07 16:36:13 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [8302f56d] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as ec2-user@52.198.123.190
+ DEBUG [8302f56d] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [8302f56d] Finished in 0.250 seconds with exit status 0 (successful).
+ DEBUG [da1ef176] Running [ ! -d /var/www/b/shared/config ] as ec2-user@52.198.123.190
+ DEBUG [da1ef176] Command: [ ! -d /var/www/b/shared/config ]
+ DEBUG [da1ef176] Finished in 0.088 seconds with exit status 1 (failed).
